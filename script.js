@@ -6,7 +6,7 @@ function deviner() {
     let tentative = parseInt(document.getElementById("tentative").value);
     let message = document.getElementById("message");
 
-    if (isNaN(tentative) || tentative < 1 || tentative > 1000) {
+    if (isNaN(tentative) || tentative < 1 || tentative > 100) {
         message.textContent = "Veuillez entrer un nombre entre 1 et 100.";
         message.className = "red";
         return;
